@@ -9,6 +9,7 @@ builder.Services.AddControllers();
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
 builder.Services.AddScoped<Magic8BallService>();
+builder.Services.AddScoped<RestaurantPickerService>();
 
 var app = builder.Build();
 app.MapControllers();
@@ -20,7 +21,6 @@ if (app.Environment.IsDevelopment())
     app.UseSwaggerUI();
 }
 app.UseHttpsRedirection();
-
 app.UseAuthorization();
 
 app.Run();
