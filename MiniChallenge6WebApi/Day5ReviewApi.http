@@ -1,0 +1,6 @@
+@Day5ReviewApi_HostAddress = http://localhost:5226
+
+GET {{Day5ReviewApi_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###
