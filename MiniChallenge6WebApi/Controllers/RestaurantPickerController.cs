@@ -16,7 +16,7 @@ namespace MiniChallenge6WebApi.Controllers
         {
             _restaurantPicker = restaurantPicker;
         }
-        [HttpPost("BurgerPizzaMisc/{category}")]
+        [HttpPost("BurgerPizzaOrMisc/{category}")]
         public string RestaurantPicker(string category)
         {
             return _restaurantPicker.GetRestaurant(category);

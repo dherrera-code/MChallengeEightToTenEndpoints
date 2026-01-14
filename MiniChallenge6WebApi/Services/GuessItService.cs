@@ -12,7 +12,7 @@ namespace MiniChallenge6WebApi.Services
             int randomNum = Random.Shared.Next(1,11);
            if(guess > randomNum)
             {
-                return $"Your guess of {guess} is HIGHER than the CPU number of {randomNum}! Game Over Play Again!";
+                return $"Your guess of {guess} is HIGHER than the CPU number of {randomNum}! Game Over! Play Again!";
             }
             else if(guess < randomNum)
             {
@@ -26,7 +26,7 @@ namespace MiniChallenge6WebApi.Services
             int randomNum = Random.Shared.Next(1,51);
            if(guess > randomNum)
             {
-                return $"Your guess of {guess} is HIGHER than the CPU number of {randomNum}! Game Over Play Again!";
+                return $"Your guess of {guess} is HIGHER than the CPU number of {randomNum}! Game Over! Play Again!";
             }
             else if(guess < randomNum)
             {
@@ -40,7 +40,7 @@ namespace MiniChallenge6WebApi.Services
             int randomNum = Random.Shared.Next(1,101);
            if(guess > randomNum)
             {
-                return $"Your guess of {guess} is HIGHER than the CPU number of {randomNum}! Game Over Play Again!";
+                return $"Your guess of {guess} is HIGHER than the CPU number of {randomNum}! Game Over! Play Again!";
             }
             else if(guess < randomNum)
             {

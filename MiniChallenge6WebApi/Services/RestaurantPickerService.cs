@@ -8,7 +8,7 @@ namespace MiniChallenge6WebApi.Services
     public class RestaurantPickerService
     {
         public string[] burgerArray = { "McDonald", "InNOut", "Burger King", "Chick fil-A", "Raising Canes", "Wendy's", "Jack in the Box", "Arby's", "Five Guys", "WhataBurger" };
-        public string[] miscArray = { "Denny's", "IHop", "AppleBees", "Subway", "Chipotle", "Taco Bell", "El Frutal", "Olive Garden", "Nena's Mexican Cuisine", "Cheese Cake Factory" };
+        public string[] miscArray = { "Denny's", "IHop", "AppleBees", "Subway", "Chipotle", "Taco Bell", "El Frutal Mexican Restaurant", "Olive Garden", "Nena's Mexican Cuisine", "Cheese Cake Factory" };
         public string[] pizzaArray = { "Eddies Pizza", "Mountain Mikes", "Dominos", "Little Caesar", "Sam's Pizza", "Five Guys", "Papa Johns", "Pizza Hut", "MOD pizza", "Costco's pizza" };
 
         public string GetRestaurant(string category)

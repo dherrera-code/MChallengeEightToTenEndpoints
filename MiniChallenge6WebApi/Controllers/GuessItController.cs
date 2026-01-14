@@ -13,30 +13,25 @@ namespace MiniChallenge6WebApi.Controllers
     public class GuessItController : ControllerBase
     {
         private readonly GuessItService _guessIt;
-        public GuessItController (GuessItService guessIt)
+        public GuessItController(GuessItService guessIt)
         {
             _guessIt = guessIt;
         }
         //Have one endpoint accept an input for difficulty and generate a random number!
-        [HttpPost("PlayEasyMode/{guess}")]
+        [HttpPost("PlayEasyMode1To10/{guess}")]
         public string GuessEasyMode(int guess)
         {
             return _guessIt.StartGameEasy(guess);
         }
-        [HttpPost("PlayMediumMode/{guess}")]
+        [HttpPost("PlayMediumMode1To50/{guess}")]
         public string GuessMediumMode(int guess)
         {
             return _guessIt.StartGameMedium(guess);
         }
-
-[HttpPost("PlayHardMode/{guess}")]
+        [HttpPost("PlayHardMode1To100/{guess}")]
         public string GuessHardMode(int guess)
         {
             return _guessIt.StartGameHard(guess);
         }
-
-
-
-
     }
 }
