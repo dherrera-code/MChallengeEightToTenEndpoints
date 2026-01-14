@@ -8,8 +8,12 @@ namespace MiniChallenge6WebApi.Services
     public class Magic8BallService
     {
         
-        public string Magic8Ball()
+        public string Magic8Ball(string question)
         {
+            if (!question.Trim().Contains("?"))
+            {
+                return "Your question needs to contain a ?";
+            }
             int randomNum = Random.Shared.Next(1, 11);
             switch (randomNum)
                 {

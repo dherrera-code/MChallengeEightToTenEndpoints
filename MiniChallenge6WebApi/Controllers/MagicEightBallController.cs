@@ -20,9 +20,9 @@ namespace MiniChallenge6WebApi.Controllers
     }
 
         [HttpPost("/{askAQuestion}")]
-        public string Magic8Ball()
+        public string Magic8Ball(string askAQuestion)
         {
-            return _content.Magic8Ball();
+            return _content.Magic8Ball(askAQuestion);
         }
     }
 }
